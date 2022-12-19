@@ -9,7 +9,7 @@
 import random
 
 
-def numEnter(n):
+def NumEnter(n):
     while True:
         try:
             if n > 1:
@@ -21,7 +21,7 @@ def numEnter(n):
     return n
 
 
-def arrayCoin(k):
+def ArrayCoin(k):
     array = []
     i = 0
     for i in range(0, k):
@@ -29,7 +29,7 @@ def arrayCoin(k):
     return array
 
 
-def howMachFlip(m):
+def HowMachFlip(m):
     sum = 0
     for i in range(0, len(m)):
         if m[i] == 1:
@@ -42,7 +42,7 @@ def howMachFlip(m):
             f'Минемольное колличество монет которые надо перевенуть {sum} шт.')
 
 
-num = numEnter(int(input('Ввведите количество монет: ')))
-coin = arrayCoin(num)
+num = NumEnter(int(input('Ввведите количество монет: ')))
+coin = ArrayCoin(num)
 print(coin)
-howMachFlip(coin)
+HowMachFlip(coin)
