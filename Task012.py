@@ -19,11 +19,7 @@ def NamberHidden():
 def QuadraticEquation(chisla):
     num = (sqrt(pow(chisla[0] + chisla[1], 2) - 4 * chisla[0] * chisla[1]) \
             + chisla[0] + chisla[1])/ 2
-
-
     return num
-
-
 
 
 numbers = NamberHidden()

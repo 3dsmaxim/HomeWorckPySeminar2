@@ -12,13 +12,13 @@ import random
 def NumEnter(n):
     while True:
         try:
-            if n > 1:
+            if int(n) > 0:
                 break
-            if n <= 0:
+            if int(n) <= 0:
                 n = int(input('Введите целое число от 1-го и выше: '))
         except:
             n = int(input('Ввод не верный, повторите ввод: '))
-    return n
+    return int(n)
 
 
 def ArrayCoin(k):
@@ -42,7 +42,7 @@ def HowMachFlip(m):
             f'Минемольное колличество монет которые надо перевенуть {sum} шт.')
 
 
-num = NumEnter(int(input('Ввведите количество монет: ')))
+num = NumEnter(input('Ввведите количество монет: '))
 coin = ArrayCoin(num)
 print(coin)
 HowMachFlip(coin)
